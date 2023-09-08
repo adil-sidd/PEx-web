@@ -1,0 +1,3 @@
+/pex
+  /privacy
+    index.html
