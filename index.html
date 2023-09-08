@@ -70,15 +70,31 @@
     <p>We may update this Privacy Policy to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the updated policy on our website or within the App.</p>
 
     <h2>Contact Us:</h2>
-    <p>For any questions or concerns regarding this Privacy Policy, please contact us at [Contact Email].</p>
+    <p>For any questions or concerns regarding this Privacy Policy, please contact us at developer@adamyainnovations.com.</p>
 
     <p>By using our services, you agree to the terms outlined in this Privacy Policy.</p>
 
-    <p><em>[Your Privacy Policy URL]</em></p>
+    <p><em>adamyainnovations.com/pex/privacy</em></p>
+
+
+    <button id="supportButton">Delete Account</button>
+
+    <!-- JavaScript to handle the button click -->
+    <script>
+        // Get the Support button element by its ID
+        var supportButton = document.getElementById('supportButton');
+        
+        // Add a click event listener to the Support button
+        supportButton.addEventListener('click', function() {
+            // Compose the email link with the subject and body
+            var subject = encodeURIComponent('Account Delete Request');
+            var body = encodeURIComponent('Hello,\n\nI need support with your application. Please help me.');
+            var mailtoLink = 'mailto:developer@adamyainnovations.com?subject=' + subject + '&body=' + body;
+            
+            // Open the default email client with the mailto link
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 
 </html>
-
-git remote add origin git@github.com:adil-sidd/PEx-web.git
-git branch -M main
-git push -u origin main
